@@ -945,7 +945,17 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:52px
     paintLogoGalaxy(document.getElementById('heroLogoCanvas'), true);
   });
 
-  // Hero logo — no rotation, sits upright and centered
+  // Subtle slow spin on hero logo
+  const heroLogoWrap = document.getElementById('heroLogoWrap');
+  if (heroLogoWrap) {
+    let angle = 0;
+    function rotateLogo() {
+      angle += 0.1;
+      heroLogoWrap.style.transform = `rotate(${angle}deg)`;
+      requestAnimationFrame(rotateLogo);
+    }
+    rotateLogo();
+  }
 })();
 </script>
 
