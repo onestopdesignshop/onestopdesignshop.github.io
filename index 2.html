@@ -1,0 +1,1111 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Stop Design Shop | Studio-Grade Design Assets</title>
+<meta name="description" content="Your visuals close deals before you say a word. Studio-grade icons, templates, palettes & UI components — instant download, one-time payment, commercial license.">
+<meta property="og:title" content="One Stop Design Shop — Your Visuals Close Deals">
+<meta property="og:description" content="The difference between a browser and a buyer is how professional your brand looks in the first 3 seconds.">
+<meta property="og:url" content="https://onestopdesignshop.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://onestopdesignshop.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://onestopdesignshop.github.io/og-image.jpg">
+<link rel="canonical" href="https://onestopdesignshop.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<script defer data-domain="onestopdesignshop.github.io" src="https://plausible.io/js/script.js"></script>
+<style>
+:root{
+  --ink:#04040d;--surface:#080816;--card:#0e0e22;--card2:#12122a;
+  --border:rgba(255,255,255,0.06);--border-lit:rgba(192,132,252,0.3);
+  --t1:#f8fafc;--t2:#94a3b8;--t3:#475569;
+  --violet:#7c3aed;--pink:#db2777;--indigo:#818cf8;--lavender:#c084fc;
+  --gold:#FFD700;--gold2:#D4AF37;--silver:#E8E8E8;--silver2:#A8A8A8;
+  --grad:linear-gradient(135deg,#c084fc 0%,#818cf8 30%,#f472b6 65%,#fbbf24 100%);
+  --grad-gold:linear-gradient(135deg,#FFD700 0%,#FFF0A0 40%,#D4AF37 70%,#FFD700 100%);
+  --grad-silver:linear-gradient(135deg,#C0C0C0 0%,#F0F0F0 45%,#A8A8A8 75%,#E8E8E8 100%);
+  --btn:linear-gradient(135deg,#7c3aed,#db2777);
+  --glow:0 0 60px rgba(124,58,237,0.4);
+  --r:16px;--rs:10px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#04040d;color:var(--t1);font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+
+
+/* ── LOGO ── */
+.nav-logo-wrap {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: filter .25s, transform .25s;
+}
+.nav-logo-wrap:hover {
+  filter: drop-shadow(0 0 12px rgba(192,132,252,0.8));
+  transform: scale(1.05);
+}
+.nav-logo-wrap canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nav-logo-wrap svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-logo-wrap {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 36px;
+  filter: drop-shadow(0 0 48px rgba(192,132,252,0.65)) drop-shadow(0 0 80px rgba(124,58,237,0.3));
+  transition: filter .3s;
+}
+.hero-logo-wrap:hover {
+  filter: drop-shadow(0 0 64px rgba(192,132,252,0.85)) drop-shadow(0 0 100px rgba(124,58,237,0.5));
+}
+.hero-logo-wrap canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.hero-logo-wrap svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+@media(max-width:480px){
+  .hero-logo-wrap { width: 130px; height: 130px; }
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:rgba(4,4,13,0.9);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-brand{font-family:'Cinzel Decorative',serif;font-size:12px;font-weight:700;letter-spacing:3px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:40px;list-style:none}
+.nav-links a{font-size:12px;font-weight:500;color:var(--t3);letter-spacing:.5px;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--t1)}
+.nav-cta{font-size:12px;font-weight:700;color:#fff;background:var(--btn);border-radius:8px;padding:11px 26px;letter-spacing:.5px;text-transform:uppercase;transition:opacity .2s,transform .15s;box-shadow:0 0 28px rgba(124,58,237,.35)}
+.nav-cta:hover{opacity:.88;transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:140px 24px 80px;overflow:hidden;background:var(--ink)}
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto}
+
+/* glitter eyebrow */
+.eyebrow-wrap{display:inline-flex;align-items:center;gap:10px;margin-bottom:40px;padding:8px 24px;border:1px solid var(--border-lit);border-radius:30px;background:rgba(124,58,237,0.06)}
+.eyebrow-dot{width:7px;height:7px;background:var(--lavender);border-radius:50%;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.5)}}
+.eyebrow-text{font-size:10px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--lavender)}
+
+/* HERO H1 — THE MONEY LINE */
+.hero-h1-wrap{position:relative;display:inline-block;margin-bottom:8px}
+.hero-h1 .gw{position:relative;}
+/* white shimmer outline on gradient headline */
+/* white diamond outline on headline */
+.hero-h1 .gw{-webkit-text-stroke:0.5px rgba(255,255,255,0.55);paint-order:stroke fill}
+/* white diamond outline on logo text */
+.logo-text-shimmer{-webkit-text-stroke:0.4px rgba(255,255,255,0.5);paint-order:stroke fill}
+#glitterCanvas{position:absolute;inset:-50px -80px;width:calc(100% + 160px);height:calc(100% + 100px);pointer-events:none;z-index:3}
+.hero-h1{font-family:'Cinzel Decorative',serif;font-size:clamp(32px,6vw,72px);font-weight:900;line-height:1.1;color:#fff;text-shadow:0 2px 40px rgba(0,0,0,.9),0 1px 6px rgba(0,0,0,1);letter-spacing:.5px;position:relative;z-index:2;margin-bottom:0} .hero-h1 .gw::before{content:attr(data-text);position:absolute;left:0;top:0;-webkit-text-stroke:1.5px rgba(255,255,255,0.35);color:transparent;pointer-events:none}
+.hero-h1 .gw{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* HERO STATEMENT — the 3-second line */
+.hero-statement{font-family:'Cinzel',serif;font-size:clamp(14px,1.8vw,20px);font-weight:400;color:var(--t1);line-height:1.8;max-width:680px;margin:28px auto 0;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.hero-statement .hs-gold{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
+.hero-statement .hs-silver{background:var(--grad-silver);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:500}
+
+/* HERO CTA BLOCK */
+.hero-cta-block{margin-top:52px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.hero-cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#fff;background:var(--btn);border-radius:12px;padding:18px 44px;box-shadow:0 0 50px rgba(124,58,237,.5);transition:opacity .2s,transform .15s;letter-spacing:.3px}
+.btn-primary:hover{opacity:.88;transform:translateY(-2px)}
+.btn-primary .arrow{font-size:18px;transition:transform .2s}
+.btn-primary:hover .arrow{transform:translateX(4px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--lavender);background:transparent;border:1px solid var(--border-lit);border-radius:12px;padding:18px 36px;transition:border-color .2s,background .2s}
+.btn-ghost:hover{border-color:var(--lavender);background:rgba(192,132,252,.06)}
+.hero-micro{font-size:12px;color:var(--t3);letter-spacing:.5px}
+.hero-micro span{color:var(--lavender);font-weight:600}
+
+/* SOCIAL PROOF BAR */
+.proof-bar{margin-top:64px;padding-top:48px;border-top:1px solid var(--border);display:flex;gap:0;justify-content:center}
+.proof-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 40px;border-right:1px solid var(--border)}
+.proof-item:last-child{border-right:none}
+.proof-num{font-family:'Cinzel',serif;font-size:32px;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.proof-label{font-size:11px;color:var(--t3);letter-spacing:2px;text-transform:uppercase}
+.hero-fade{position:absolute;bottom:0;left:0;right:0;height:140px;background:linear-gradient(transparent,var(--ink));z-index:1}
+
+/* ── 3-SECOND BANNER ── */
+.three-sec{background:var(--surface);border-top:1px solid rgba(192,132,252,.2);border-bottom:1px solid rgba(192,132,252,.2);padding:28px 24px;text-align:center;position:relative;overflow:hidden}
+.three-sec::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(192,132,252,.04),transparent);animation:shimmerBar 3s ease-in-out infinite}
+@keyframes shimmerBar{0%{opacity:0;transform:translateX(-100%)}50%{opacity:.6;transform:translateX(0)}100%{opacity:0;transform:translateX(100%)}}
+.three-sec-text{font-family:'Cinzel',serif;font-size:clamp(13px,2vw,18px);font-weight:600;color:var(--t1);letter-spacing:1px;line-height:1.7}
+.three-sec-text .t-gold{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 8px rgba(255,215,0,.4))}
+.three-sec-text .t-grad{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ── SHARED SECTION ── */
+section{padding:100px 24px}
+.container{max-width:1200px;margin:0 auto}
+.section-eyebrow{font-size:10px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--lavender);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.section-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--lavender);opacity:.5}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(26px,4vw,48px);font-weight:700;color:var(--t1);line-height:1.15;margin-bottom:16px}
+.section-sub{font-size:17px;font-weight:300;color:var(--t2);max-width:560px;line-height:1.75}
+
+/* ── VISUAL PROOF STRIP ── */
+.vp-strip{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:60px 24px}
+.vp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:1200px;margin:0 auto}
+.vp-card{background:var(--card);padding:44px 36px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;transition:background .25s;position:relative;overflow:hidden}
+.vp-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:opacity .25s}
+.vp-card:hover{background:var(--card2)}
+.vp-card:hover::after{opacity:1}
+.vp-icon{font-size:32px;line-height:1}
+.vp-num{font-family:'Cinzel',serif;font-size:48px;font-weight:900;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.vp-label{font-size:13px;font-weight:600;color:var(--t1);letter-spacing:.3px}
+.vp-desc{font-size:13px;font-weight:300;color:var(--t2);line-height:1.6}
+
+/* ── PRODUCTS ── */
+.products-section{background:var(--ink)}
+.products-header{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:72px}
+.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.product-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .2s,box-shadow .25s;position:relative}
+.product-card:hover{border-color:var(--border-lit);transform:translateY(-6px);box-shadow:0 24px 60px rgba(124,58,237,.15)}
+.product-card.featured{border-color:rgba(192,132,252,.35);box-shadow:0 0 80px rgba(124,58,237,.12)}
+
+/* product preview */
+.product-preview{height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.prev-cosmos{background:radial-gradient(ellipse at 60% 30%,rgba(124,58,237,.35) 0%,rgba(4,4,13,.95) 70%)}
+.prev-social{background:radial-gradient(ellipse at 40% 60%,rgba(219,39,119,.28) 0%,rgba(4,4,13,.95) 70%)}
+.prev-palette{background:radial-gradient(ellipse at 50% 30%,rgba(251,191,36,.22) 0%,rgba(4,4,13,.95) 70%)}
+.prev-ui{background:radial-gradient(ellipse at 65% 65%,rgba(56,189,248,.22) 0%,rgba(4,4,13,.95) 70%)}
+
+/* icon grid preview */
+.icon-preview-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;padding:20px}
+.ip-icon{width:32px;height:32px;border-radius:8px;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.2);display:flex;align-items:center;justify-content:center;font-size:14px;transition:background .2s,transform .2s}
+.product-card:hover .ip-icon{background:rgba(192,132,252,.2);transform:scale(1.05)}
+
+/* social preview */
+.social-preview{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:20px;width:100%}
+.sp-tall{grid-row:span 2;border-radius:10px;background:linear-gradient(160deg,rgba(219,39,119,.3),rgba(124,58,237,.2));border:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-size:28px}
+.sp-wide{border-radius:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-size:18px;height:80px}
+
+/* palette preview */
+.palette-preview{display:flex;gap:6px;padding:24px;align-items:stretch;height:100%}
+.pp-col{display:flex;flex-direction:column;gap:4px;flex:1}
+.pp-swatch{border-radius:4px;flex:1}
+
+/* UI preview */
+.ui-preview{padding:20px;width:100%;display:flex;flex-direction:column;gap:8px}
+.ui-bar{height:6px;border-radius:3px}
+.ui-card-m{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:8px}
+.ui-av{width:26px;height:26px;border-radius:50%;flex-shrink:0}
+.ui-lines{flex:1;display:flex;flex-direction:column;gap:4px}
+.ui-line{height:5px;border-radius:3px;background:rgba(255,255,255,.07)}
+.ui-btn-m{height:28px;border-radius:6px;background:var(--btn);width:80px;margin-top:4px}
+
+/* badges */
+.product-badge{position:absolute;top:16px;right:16px;font-size:9px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;padding:5px 12px;border-radius:20px}
+.b-pop{background:rgba(251,191,36,.15);color:#fbbf24;border:1px solid rgba(251,191,36,.3)}
+.b-new{background:rgba(192,132,252,.15);color:var(--lavender);border:1px solid var(--border-lit)}
+.b-val{background:rgba(244,114,182,.15);color:#f472b6;border:1px solid rgba(244,114,182,.3)}
+.b-hot{background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+
+/* product body */
+.product-body{padding:32px;flex:1;display:flex;flex-direction:column}
+.product-cat{font-size:9px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--lavender);margin-bottom:8px}
+.product-name{font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:4px;line-height:1.2}
+.product-hook{font-size:13px;font-weight:600;color:var(--indigo);margin-bottom:16px;line-height:1.5}
+.product-pain{font-size:14px;font-weight:300;color:var(--t2);line-height:1.8;margin-bottom:20px;flex:1}
+.product-pain strong{color:var(--t1);font-weight:500}
+
+/* what's inside */
+.wi-label{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--t3);margin-bottom:10px}
+.wi-list{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:28px}
+.wi-list li{font-size:12px;color:var(--t2);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.wi-list li::before{content:'→';color:var(--lavender);flex-shrink:0;font-size:11px;margin-top:1px}
+
+/* price row */
+.price-row{display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid var(--border);gap:12px}
+.price-amt{font-family:'Cinzel',serif;font-size:30px;font-weight:700;color:var(--t1);line-height:1}
+.price-note{font-size:11px;color:var(--t3);margin-top:3px}
+.btn-buy{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#fff;background:var(--btn);border-radius:8px;padding:13px 24px;box-shadow:0 0 24px rgba(124,58,237,.3);transition:opacity .2s,transform .15s;white-space:nowrap;letter-spacing:.3px}
+.btn-buy:hover{opacity:.88;transform:translateY(-1px)}
+
+/* ── BUNDLE ── */
+.bundle-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:120px 24px}
+.bundle-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center}
+.bundle-tag{display:inline-block;font-size:9px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,215,0,.3);border-radius:20px;padding:6px 16px;margin-bottom:24px}
+.bundle-title{font-family:'Cinzel',serif;font-size:clamp(28px,3.5vw,48px);font-weight:700;color:var(--t1);line-height:1.15;margin-bottom:20px}
+.bundle-desc{font-size:16px;font-weight:300;color:var(--t2);line-height:1.8;margin-bottom:36px;max-width:520px}
+.bundle-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:40px}
+.bundle-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--t2)}
+.bundle-item::before{content:'✦';color:var(--gold);font-size:10px;flex-shrink:0}
+
+/* bundle price card */
+.bundle-card{background:var(--card);border:1px solid rgba(192,132,252,.35);border-radius:20px;padding:52px 44px;text-align:center;position:relative;overflow:hidden;box-shadow:0 0 80px rgba(124,58,237,.15)}
+.bundle-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.bc-was{font-size:14px;color:var(--t3);text-decoration:line-through;margin-bottom:8px}
+.bc-now{font-family:'Cinzel',serif;font-size:72px;font-weight:900;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px;filter:drop-shadow(0 0 20px rgba(255,215,0,.3))}
+.bc-save{font-size:12px;font-weight:600;color:var(--gold);margin-bottom:40px;letter-spacing:1px}
+.btn-bundle{display:block;width:100%;font-size:15px;font-weight:800;color:#fff;background:var(--btn);border-radius:12px;padding:20px;text-align:center;box-shadow:0 0 50px rgba(124,58,237,.45);transition:opacity .2s,transform .15s;margin-bottom:16px;letter-spacing:.5px}
+.btn-bundle:hover{opacity:.88;transform:translateY(-2px)}
+.bc-note{font-size:11px;color:var(--t3);letter-spacing:.5px}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--ink)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:64px}
+.testi-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:36px;transition:border-color .2s}
+.testi-card:hover{border-color:var(--border-lit)}
+.testi-stars{color:var(--gold);font-size:13px;letter-spacing:3px;margin-bottom:16px}
+.testi-text{font-size:15px;font-weight:300;color:var(--t1);line-height:1.8;margin-bottom:24px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:700;flex-shrink:0}
+.av-a{background:linear-gradient(135deg,#7c3aed,#db2777)}
+.av-b{background:linear-gradient(135deg,#0ea5e9,#818cf8)}
+.av-c{background:linear-gradient(135deg,#f59e0b,#ef4444)}
+.testi-name{font-size:14px;font-weight:600;color:var(--t1)}
+.testi-role{font-size:12px;color:var(--t3)}
+
+/* ── PROCESS ── */
+.process{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:64px}
+.process-step{background:var(--card);padding:48px 36px}
+.ps-num{font-family:'Cinzel',serif;font-size:52px;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;opacity:.35;margin-bottom:20px}
+.ps-title{font-family:'Cinzel',serif;font-size:16px;font-weight:600;color:var(--t1);margin-bottom:12px}
+.ps-desc{font-size:13px;font-weight:300;color:var(--t2);line-height:1.75}
+
+/* ── FINAL CTA ── */
+.final-cta{background:var(--ink);text-align:center;padding:140px 24px;position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;background:radial-gradient(ellipse,rgba(124,58,237,.12) 0%,transparent 70%);pointer-events:none}
+.fc-inner{position:relative;z-index:1;max-width:740px;margin:0 auto}
+.fc-label{font-size:10px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--lavender);margin-bottom:20px}
+.fc-title{font-family:'Cinzel Decorative',serif;font-size:clamp(24px,4vw,50px);font-weight:900;color:var(--t1);line-height:1.15;margin-bottom:20px;text-shadow:0 0 60px rgba(124,58,237,.3)}
+.fc-title .fc-grad{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.fc-sub{font-size:17px;font-weight:300;color:var(--t2);line-height:1.75;margin-bottom:52px;max-width:540px;margin-left:auto;margin-right:auto}
+
+/* ── FOOTER ── */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:52px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.footer-brand{font-family:'Cinzel Decorative',serif;font-size:11px;letter-spacing:3px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.footer-links{display:flex;gap:32px;list-style:none}
+.footer-links a{font-size:12px;color:var(--t3);letter-spacing:.5px;transition:color .2s}
+.footer-links a:hover{color:var(--t2)}
+.footer-copy{font-size:12px;color:var(--t3)}
+
+/* ── GLITTER KEYWORD SYSTEM ── */
+.gk{position:relative;display:inline-block;white-space:nowrap}
+.gk canvas.kc{position:absolute;pointer-events:none;z-index:10;top:-32px;left:-24px;width:calc(100% + 48px);height:calc(100% + 64px)}
+.gk-gold{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(255,215,0,.55))}
+.gk-silver{background:var(--grad-silver);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 8px rgba(192,192,192,.5))}
+.gk-grad{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 12px rgba(192,132,252,.5))}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .products-header{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:1fr}
+  .bundle-inner{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .vp-grid{grid-template-columns:1fr 1fr}
+  .proof-bar{flex-wrap:wrap;gap:32px}
+  .proof-item{border-right:none}
+  footer{flex-direction:column;align-items:flex-start}
+  .pain-inner-grid{grid-template-columns:1fr !important}
+}
+@media(max-width:480px){
+  .process-grid{grid-template-columns:1fr}
+  .vp-grid{grid-template-columns:1fr}
+  .bundle-list{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="nav-logo-wrap" id="navLogoWrap" title="One Stop Design Shop">
+    <canvas id="navLogoCanvas"></canvas>
+    <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c084fc"/><stop offset="35%" stop-color="#818cf8"/>
+          <stop offset="65%" stop-color="#f472b6"/><stop offset="100%" stop-color="#fbbf24"/>
+        </linearGradient>
+        <radialGradient id="gc" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#0a0a12" stop-opacity="0"/>
+        </radialGradient>
+        <path id="ta" d="M 52,160 A 108,108 0 0,1 268,160"/>
+        <path id="ba" d="M 60,185 A 108,108 0 0,0 260,185"/>
+        <filter id="gl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="tgl"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="mgl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+
+      <!-- deep glow core -->
+      <circle cx="160" cy="160" r="140" fill="url(#gc)"/>
+
+      <!-- outer rings -->
+      <circle cx="160" cy="160" r="148" fill="none" stroke="url(#rg)" stroke-width="3" opacity="0.9"/>
+      <circle cx="160" cy="160" r="138" fill="none" stroke="url(#rg)" stroke-width="0.8" opacity="0.5"/>
+
+      <!-- compass tick marks -->
+      <g stroke="url(#rg)" stroke-width="1.2" opacity="0.7">
+        <line x1="160" y1="12" x2="160" y2="22"/><line x1="160" y1="298" x2="160" y2="308"/>
+        <line x1="12" y1="160" x2="22" y2="160"/><line x1="298" y1="160" x2="308" y2="160"/>
+        <line x1="57" y1="57" x2="64" y2="64"/><line x1="263" y1="57" x2="256" y2="64"/>
+        <line x1="57" y1="263" x2="64" y2="256"/><line x1="263" y1="263" x2="256" y2="256"/>
+        <line x1="99" y1="17" x2="101" y2="24"/><line x1="221" y1="17" x2="219" y2="24"/>
+        <line x1="99" y1="303" x2="101" y2="296"/><line x1="221" y1="303" x2="219" y2="296"/>
+        <line x1="17" y1="99" x2="24" y2="101"/><line x1="17" y1="221" x2="24" y2="219"/>
+        <line x1="303" y1="99" x2="296" y2="101"/><line x1="303" y1="221" x2="296" y2="219"/>
+      </g>
+
+      <!-- cardinal diamond ornaments -->
+      <g fill="url(#rg)" filter="url(#gl)" opacity="0.95">
+        <polygon points="160,7 164,16 160,25 156,16"/>
+        <polygon points="160,295 164,304 160,313 156,304"/>
+        <polygon points="7,160 16,156 25,160 16,164"/>
+        <polygon points="295,160 304,156 313,160 304,164"/>
+      </g>
+
+      <!-- outer diamond frame — white shine + gradient -->
+      <polygon points="160,70 216,160 160,250 104,160"
+        fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2.5" opacity="1"/>
+      <polygon points="160,70 216,160 160,250 104,160"
+        fill="none" stroke="url(#rg)" stroke-width="1.5" opacity="0.6"/>
+      <!-- inner diamond frame — white shine + gradient -->
+      <polygon points="160,90 200,160 160,230 120,160"
+        fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" opacity="1"/>
+      <polygon points="160,90 200,160 160,230 120,160"
+        fill="none" stroke="url(#rg)" stroke-width="0.7" opacity="0.4"/>
+
+      <!-- CENTRE: O.S.D.S monogram — outline + fill -->
+      <text x="160" y="172"
+        font-family="'Cinzel Decorative',serif"
+        font-size="40" font-weight="900"
+        fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="0.9"
+        text-anchor="middle" letter-spacing="2">
+        O.S.D.S
+      </text>
+      <text x="160" y="172"
+        font-family="'Cinzel Decorative',serif"
+        font-size="40" font-weight="900"
+        fill="url(#rg)" filter="url(#mgl)"
+        text-anchor="middle" letter-spacing="2">
+        O.S.D.S
+      </text>
+      <line x1="100" y1="180" x2="140" y2="180" stroke="url(#rg)" stroke-width="1" opacity="0.6"/>
+      <line x1="180" y1="180" x2="220" y2="180" stroke="url(#rg)" stroke-width="1" opacity="0.6"/>
+      <polygon points="160,175 164,180 160,185 156,180" fill="url(#rg)" opacity="0.8"/>
+
+      <!-- arc text top: ONE STOP DESIGN SHOP — outline + fill -->
+      <text font-family="'Cinzel Decorative',serif" font-size="13" font-weight="700"
+            fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="0.5" letter-spacing="3">
+        <textPath href="#ta" startOffset="50%" text-anchor="middle">ONE STOP DESIGN SHOP</textPath>
+      </text>
+      <text font-family="'Cinzel Decorative',serif" font-size="13" font-weight="700"
+            fill="url(#rg)" filter="url(#tgl)" letter-spacing="3">
+        <textPath href="#ta" startOffset="50%" text-anchor="middle">ONE STOP DESIGN SHOP</textPath>
+      </text>
+      <!-- arc text bottom: EST · MMXXVI — outline + fill -->
+      <text font-family="'Cinzel',serif" font-size="11.5" font-weight="600"
+            fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="0.5" letter-spacing="4">
+        <textPath href="#ba" startOffset="50%" text-anchor="middle">EST · MMXXVI</textPath>
+      </text>
+      <text font-family="'Cinzel',serif" font-size="11.5" font-weight="600"
+            fill="url(#rg)" filter="url(#tgl)" letter-spacing="4">
+        <textPath href="#ba" startOffset="50%" text-anchor="middle">EST · MMXXVI</textPath>
+      </text>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#bundle">Bundle</a></li>
+    <li><a href="#process">How It Works</a></li>
+  </ul>
+  <a href="#bundle" class="nav-cta">Get the Full Arsenal →</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+    <canvas id="heroCanvas"></canvas>
+  <div class="hero-inner">
+
+    <!-- HERO LOGO -->
+    <div class="hero-logo-wrap" id="heroLogoWrap">
+      <canvas id="heroLogoCanvas"></canvas>
+      <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="rg2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#c084fc"/><stop offset="35%" stop-color="#818cf8"/>
+            <stop offset="65%" stop-color="#f472b6"/><stop offset="100%" stop-color="#fbbf24"/>
+          </linearGradient>
+          <radialGradient id="gc2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#0a0a12" stop-opacity="0"/>
+          </radialGradient>
+          <path id="ta2" d="M 52,160 A 108,108 0 0,1 268,160"/>
+          <path id="ba2" d="M 60,185 A 108,108 0 0,0 260,185"/>
+          <filter id="gl2"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="tgl2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <!-- white diamond outline glow filter -->
+          <filter id="wof">
+            <feGaussianBlur stdDeviation="1.2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+
+        <!-- deep glow core -->
+        <circle cx="160" cy="160" r="140" fill="url(#gc2)"/>
+        <circle cx="160" cy="160" r="148" fill="none" stroke="url(#rg2)" stroke-width="3" opacity="0.9"/>
+        <circle cx="160" cy="160" r="138" fill="none" stroke="url(#rg2)" stroke-width="0.8" opacity="0.5"/>
+        <g stroke="url(#rg2)" stroke-width="1.2" opacity="0.7">
+          <line x1="160" y1="12" x2="160" y2="20"/><line x1="160" y1="300" x2="160" y2="308"/>
+          <line x1="12" y1="160" x2="20" y2="160"/><line x1="300" y1="160" x2="308" y2="160"/>
+          <line x1="57" y1="57" x2="63" y2="63"/><line x1="263" y1="57" x2="257" y2="63"/>
+          <line x1="57" y1="263" x2="63" y2="257"/><line x1="263" y1="263" x2="257" y2="257"/>
+          <line x1="99" y1="17" x2="101" y2="22"/><line x1="221" y1="17" x2="219" y2="22"/>
+          <line x1="99" y1="303" x2="101" y2="298"/><line x1="221" y1="303" x2="219" y2="298"/>
+          <line x1="17" y1="99" x2="22" y2="101"/><line x1="17" y1="221" x2="22" y2="219"/>
+          <line x1="303" y1="99" x2="298" y2="101"/><line x1="303" y1="221" x2="298" y2="219"/>
+        </g>
+        <g fill="url(#rg2)" filter="url(#gl2)" opacity="0.9">
+          <polygon points="160,9 163,16 160,23 157,16"/>
+          <polygon points="160,297 163,304 160,311 157,304"/>
+          <polygon points="9,160 16,157 23,160 16,163"/>
+          <polygon points="297,160 304,157 311,160 304,163"/>
+        </g>
+        <!-- outer diamond — white outline layer -->
+        <polygon points="160,72 214,160 160,248 106,160"
+          fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1" opacity="1"/>
+        <!-- outer diamond — gradient layer on top -->
+        <polygon points="160,72 214,160 160,248 106,160"
+          fill="none" stroke="url(#rg2)" stroke-width="1.5" opacity="0.7"/>
+        <!-- inner diamond — white outline layer -->
+        <polygon points="160,92 198,160 160,228 122,160"
+          fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="0.7" opacity="1"/>
+        <!-- inner diamond — gradient layer on top -->
+        <polygon points="160,92 198,160 160,228 122,160"
+          fill="none" stroke="url(#rg2)" stroke-width="0.8" opacity="0.5"/>
+        <!-- ── TOP ARC — white diamond outline + gradient fill ── -->
+        <!-- outline layer: white stroke, no fill -->
+        <text font-family="'Cinzel Decorative',serif" font-size="14.5" font-weight="700"
+              fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.6"
+              filter="url(#wof)" letter-spacing="3">
+          <textPath href="#ta2" startOffset="50%" text-anchor="middle">ONE STOP DESIGN SHOP</textPath>
+        </text>
+        <!-- fill layer: gradient, no stroke -->
+        <text font-family="'Cinzel Decorative',serif" font-size="14.5" font-weight="700"
+              fill="url(#rg2)" filter="url(#tgl2)" letter-spacing="3">
+          <textPath href="#ta2" startOffset="50%" text-anchor="middle">ONE STOP DESIGN SHOP</textPath>
+        </text>
+
+        <!-- ── BOTTOM ARC — white diamond outline + gradient fill ── -->
+        <text font-family="'Cinzel Decorative',serif" font-size="12.5" font-weight="900"
+              fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.6"
+              filter="url(#wof)" letter-spacing="6">
+          <textPath href="#ba2" startOffset="50%" text-anchor="middle">O · S · D · S</textPath>
+        </text>
+        <text font-family="'Cinzel Decorative',serif" font-size="12.5" font-weight="900"
+              fill="url(#rg2)" filter="url(#tgl2)" letter-spacing="6">
+          <textPath href="#ba2" startOffset="50%" text-anchor="middle">O · S · D · S</textPath>
+        </text>
+        <line x1="108" y1="160" x2="136" y2="160" stroke="url(#rg2)" stroke-width="0.8" opacity="0.5"/>
+        <line x1="184" y1="160" x2="212" y2="160" stroke="url(#rg2)" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <div class="eyebrow-wrap">
+      <span class="eyebrow-dot"></span>
+      <span class="eyebrow-text">Studio-Grade Design. One-Time Price.</span>
+    </div>
+
+    <div class="hero-h1-wrap">
+      <canvas id="glitterCanvas" aria-hidden="true"></canvas>
+      <h1 class="hero-h1" id="heroHeadline">
+        <span class="gw">Your visuals close deals</span><br>
+        <span class="gw">before you say a single word.</span>
+      </h1>
+    </div>
+
+    <p class="hero-statement">
+      <span class="hs-silver">The difference between a browser and a buyer is</span>
+      <span class="hs-gold">how professional your brand looks in the first 3 seconds.</span><br>
+      <span class="gw">You built something real. You worked nights for it. You believe in it.</span><br>
+      <span class="hs-silver">Don't let bad design be the reason nobody buys.</span>
+      <span class="hs-gold">Get studio-grade assets that make people pull out their wallet before they even read your copy.</span>
+    </p>
+
+    <div class="hero-cta-block">
+      <div class="hero-cta-row">
+        <a href="#products" class="btn-primary">Get Your Design Edge <span class="arrow">→</span></a>
+        <a href="#bundle" class="btn-ghost">Save with the Full Bundle</a>
+      </div>
+      <p class="hero-micro">Instant download · Commercial license · <span>No subscription. Ever.</span></p>
+    </div>
+
+    <div class="proof-bar">
+      <div class="proof-item"><span class="proof-num">200+</span><span class="proof-label">Premium Assets</span></div>
+      <div class="proof-item"><span class="proof-num">4</span><span class="proof-label">Done-For-You Packs</span></div>
+      <div class="proof-item"><span class="proof-num">∞</span><span class="proof-label">Projects Licensed</span></div>
+      <div class="proof-item"><span class="proof-num">$0</span><span class="proof-label">Hidden Fees. Ever.</span></div>
+    </div>
+  </div>
+  <div class="hero-fade"></div>
+</section>
+
+<!-- ── 3-SECOND BANNER ── -->
+<div class="three-sec">
+  <p class="three-sec-text">
+    <span class="t-gold">"The difference between a browser and a buyer</span>
+    is how professional your brand looks in
+    <span class="t-gold">the first 3 seconds."</span>
+    &nbsp;·&nbsp; Stop losing sales. &nbsp;·&nbsp;
+    <span class="t-grad">Start closing them.</span>
+  </p>
+</div>
+
+<!-- ── VISUAL PROOF STRIP ── -->
+<div class="vp-strip reveal">
+  <div class="vp-grid">
+    <div class="vp-card">
+      <div class="vp-icon">⚡</div>
+      <div class="vp-num">3s</div>
+      <div class="vp-label">First impression window</div>
+      <div class="vp-desc">That's all you get before someone decides to leave. Professional visuals hold them. Amateur ones push them away — silently, forever.</div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-icon">💸</div>
+      <div class="vp-num">$3k</div>
+      <div class="vp-label">Average designer quote</div>
+      <div class="vp-desc">That's what a designer quotes for what's in these packs. You can get it all today for less than a dinner out.</div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-icon">🚀</div>
+      <div class="vp-num">10min</div>
+      <div class="vp-label">From checkout to live</div>
+      <div class="vp-desc">Download, open, drop in. No onboarding. No waiting. The version of you that ships today beats the version that waits forever.</div>
+    </div>
+    <div class="vp-card">
+      <div class="vp-icon">♾️</div>
+      <div class="vp-num">∞</div>
+      <div class="vp-label">Projects. No limits.</div>
+      <div class="vp-desc">Every project. Every client. Every product. One payment, yours forever. No monthly fee quietly bleeding your runway dry at 2am.</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ── PAIN SECTION ── -->
+<section style="background:#080816;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:100px 24px;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;background:var(--surface);" class="reveal">
+      <div>
+        <p class="section-eyebrow">The Real Problem</p>
+        <h2 class="section-title" style="margin-bottom:28px;">You don't have a product problem.<br><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">You have a perception problem.</span></h2>
+        <p style="font-size:17px;font-weight:300;color:var(--t2);line-height:1.85;margin-bottom:24px;">You've seen it. A competitor with a worse product, a weaker offer, a thinner feature set — but <strong style="color:var(--t1);font-weight:500;">somehow they're winning.</strong> Their brand looks intentional. Their social looks polished. Their site makes you feel like they've been doing this for years.</p>
+        <p style="font-size:17px;font-weight:300;color:var(--t2);line-height:1.85;margin-bottom:24px;">They might not even be better than you. <strong style="color:var(--t1);font-weight:500;">They just look it.</strong> And in a world where buyers make decisions in 3 seconds, looking better <em>is</em> being better.</p>
+        <p style="font-size:17px;font-weight:300;color:var(--t2);line-height:1.85;">That gap is not talent. It's not budget. It's not connections. It's a design system — and you can close it <span style="color:var(--lavender);font-weight:600;">today, for under $20.</span></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;border-left:3px solid #ef4444;">
+          <p style="font-size:13px;font-weight:700;color:#ef4444;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">The Feeling You Know</p>
+          <p style="font-size:15px;font-weight:300;color:var(--t2);line-height:1.7;">"I shared my launch post and got 3 likes. My competitor shared theirs and got 400. Same niche. My product was better. Their design was better."</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;border-left:3px solid #f59e0b;">
+          <p style="font-size:13px;font-weight:700;color:#f59e0b;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">The Moment You Dread</p>
+          <p style="font-size:15px;font-weight:300;color:var(--t2);line-height:1.7;">"Someone looked at my site for 8 seconds and left. I know because analytics told me. I still don't know what they saw that made them go."</p>
+        </div>
+        <div style="background:var(--card);border:1px solid rgba(192,132,252,0.3);border-radius:var(--r);padding:28px 32px;border-left:3px solid var(--lavender);">
+          <p style="font-size:13px;font-weight:700;color:var(--lavender);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">What Happens After This</p>
+          <p style="font-size:15px;font-weight:300;color:var(--t2);line-height:1.7;">"I opened the pack, dropped in the icon set, swapped the palette — and my site looked like a different company. The kind of company people buy from."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTS ── -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="products-header reveal">
+      <div>
+        <p class="section-eyebrow"><span class="gk gk-gold" data-glitter="gold">The Weapons<canvas class="kc"></canvas></span></p>
+        <h2 class="section-title">Four packs that turn<br><span class="gk gk-gold" data-glitter="gold">"almost bought"<canvas class="kc"></canvas></span> into sold.</h2>
+      </div>
+      <p class="section-sub">You earned that visitor. They clicked. They landed. And then something about your design made them hesitate — and leave. These four packs fix the four moments that kill conversions before a single word gets read.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- COSMOS ICON SET -->
+      <div class="product-card reveal">
+        <span class="product-badge b-pop">Most Popular</span>
+        <div class="product-preview prev-cosmos">
+          <div class="icon-preview-grid">
+            <div class="ip-icon">⚡</div><div class="ip-icon">🌐</div><div class="ip-icon">📊</div>
+            <div class="ip-icon">🔒</div><div class="ip-icon">💡</div><div class="ip-icon">📱</div>
+            <div class="ip-icon">🎯</div><div class="ip-icon">⚙️</div><div class="ip-icon">📈</div>
+            <div class="ip-icon">🔗</div><div class="ip-icon">🛡️</div><div class="ip-icon">🌙</div>
+            <div class="ip-icon">✦</div><div class="ip-icon">🎨</div><div class="ip-icon">📦</div>
+            <div class="ip-icon">🚀</div><div class="ip-icon">💎</div><div class="ip-icon">🔍</div>
+            <div class="ip-icon">📡</div><div class="ip-icon">⭐</div><div class="ip-icon">🗂️</div>
+          </div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Icon System</p>
+          <h3 class="product-name">Cosmos Icon Set</h3>
+          <p class="product-hook"><span class="gk gk-silver" data-glitter="silver">84 icons. Zero wasted assets.<canvas class="kc"></canvas></span> 3 color themes. Production-ready.</p>
+          <p class="product-pain">You've been there — buried in a folder of 2,000 icons, none of them right, all of them needing an hour of editing you don't have. That feeling of wasted time, that sinking "nothing fits" moment, ends here. <strong>Every single Cosmos icon was chosen because a real product UI needs it.</strong> Not filler. Not padding. Drop in, ship, done. Today.</p>
+          <div class="wi-label">What's Inside</div>
+          <ul class="wi-list">
+            <li>84 SVG icons across 6 functional categories</li>
+            <li>3 pre-built themes: light, dark, brand-violet</li>
+            <li>React component library with TypeScript types</li>
+            <li>Vanilla JS import-ready bundle</li>
+            <li>Figma source file with auto-layout variants</li>
+          </ul>
+          <div class="price-row">
+            <div><div class="price-amt">$19.99</div><div class="price-note">One-time · Instant download</div></div>
+            <a href="https://onestopdesignshop.lemonsqueezy.com/checkout/buy/05bd93ad-abfb-4079-81c4-795eb627cf61" class="btn-buy">Get Icons →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOCIAL MEDIA KIT -->
+      <div class="product-card reveal">
+        <span class="product-badge b-new">New</span>
+        <div class="product-preview prev-social">
+          <div class="social-preview">
+            <div class="sp-tall">📸</div>
+            <div class="sp-wide">𝕏</div>
+            <div class="sp-wide">in</div>
+          </div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Social Media</p>
+          <h3 class="product-name">Social Media Kit</h3>
+          <p class="product-hook"><span class="gk gk-gold" data-glitter="gold">24 templates. 4 platforms.<canvas class="kc"></canvas></span> 6 color themes. Stop the scroll.</p>
+          <p class="product-pain">You poured everything into that launch. Hit publish. Watched the notification count. Heard nothing. The brutal truth nobody tells you: <strong>people scrolled past your post in 0.3 seconds because it looked like everyone else's.</strong> Not because your product wasn't good enough. Because your visual wasn't loud enough. This kit fixes that. Your next post won't get ignored.</p>
+          <div class="wi-label">What's Inside</div>
+          <ul class="wi-list">
+            <li>24 templates: posts, stories, carousels, headers</li>
+            <li>Instagram, Twitter/X, LinkedIn, Facebook</li>
+            <li>6 color themes — light, dark, galaxy, minimal, warm, bold</li>
+            <li>Figma source with smart components</li>
+            <li>Pre-exported PNG + SVG at all required sizes</li>
+          </ul>
+          <div class="price-row">
+            <div><div class="price-amt">$18.99</div><div class="price-note">One-time · Instant download</div></div>
+            <a href="https://onestopdesignshop.lemonsqueezy.com/checkout/buy/b1b44503-090c-49ea-a356-1c6af5308dd5" class="btn-buy">Get Kit →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRO COLOR PALETTES -->
+      <div class="product-card reveal">
+        <span class="product-badge b-val">Best Value</span>
+        <div class="product-preview prev-palette">
+          <div class="palette-preview">
+            <div class="pp-col"><div class="pp-swatch" style="background:linear-gradient(180deg,#7c3aed,#4f46e5)"></div><div class="pp-swatch" style="background:#c084fc"></div><div class="pp-swatch" style="background:#f1f5f9"></div></div>
+            <div class="pp-col"><div class="pp-swatch" style="background:linear-gradient(180deg,#db2777,#f472b6)"></div><div class="pp-swatch" style="background:#fbbf24"></div><div class="pp-swatch" style="background:#0f172a"></div></div>
+            <div class="pp-col"><div class="pp-swatch" style="background:linear-gradient(180deg,#0ea5e9,#818cf8)"></div><div class="pp-swatch" style="background:#e0f2fe"></div><div class="pp-swatch" style="background:#1e293b"></div></div>
+            <div class="pp-col"><div class="pp-swatch" style="background:linear-gradient(180deg,#10b981,#34d399)"></div><div class="pp-swatch" style="background:#f59e0b"></div><div class="pp-swatch" style="background:#111827"></div></div>
+          </div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Brand Color</p>
+          <h3 class="product-name">Pro Color Palettes</h3>
+          <p class="product-hook"><span class="gk gk-silver" data-glitter="silver">8 studio-grade palettes.<canvas class="kc"></canvas></span> CSS · SCSS · Figma tokens.</p>
+          <p class="product-pain">Color is doing something to your visitors right now — and if you picked yours by gut, it might be quietly costing you. The wrong combination communicates "amateur." The wrong contrast screams "unfinished." People don't consciously notice bad color. <strong>They just leave.</strong> These 8 palettes are contrast-tested, semantically named, and built to make your product feel like it was designed by someone who does this for a living — because now it was.</p>
+          <div class="wi-label">What's Inside</div>
+          <ul class="wi-list">
+            <li>8 complete palettes with full shade scales</li>
+            <li>WCAG AA contrast compliant — every palette</li>
+            <li>CSS custom properties, SCSS variables, Figma tokens</li>
+            <li>Semantic naming: primary, surface, text, border, status</li>
+            <li>Dark mode variants for every palette</li>
+          </ul>
+          <div class="price-row">
+            <div><div class="price-amt">$19.99</div><div class="price-note">One-time · Instant download</div></div>
+            <a href="https://onestopdesignshop.lemonsqueezy.com/checkout/buy/ff13fbf3-87ea-4e3d-8ede-a7c92eb22c28" class="btn-buy">Get Palettes →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI COMPONENTS -->
+      <div class="product-card featured reveal">
+        <span class="product-badge b-hot">🔥 Fan Fave</span>
+        <div class="product-preview prev-ui">
+          <div class="ui-preview">
+            <div class="ui-bar" style="width:55%;background:linear-gradient(90deg,#7c3aed,#818cf8);margin-bottom:12px"></div>
+            <div class="ui-card-m"><div class="ui-av" style="background:linear-gradient(135deg,#7c3aed,#db2777)"></div><div class="ui-lines"><div class="ui-line" style="width:70%"></div><div class="ui-line" style="width:45%"></div></div></div>
+            <div class="ui-card-m"><div class="ui-av" style="background:linear-gradient(135deg,#0ea5e9,#818cf8)"></div><div class="ui-lines"><div class="ui-line" style="width:80%"></div><div class="ui-line" style="width:55%"></div></div></div>
+            <div class="ui-btn-m"></div>
+          </div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">UI Components</p>
+          <h3 class="product-name">UI Component Snippets</h3>
+          <p class="product-hook"><span class="gk gk-gold" data-glitter="gold">50+ copy-paste components.<canvas class="kc"></canvas></span> HTML/CSS. Zero dependencies.</p>
+          <p class="product-pain">You told yourself it'd only take 20 minutes to build that form. Three hours later you're still debugging the hover state on a button that will have zero impact on revenue. Meanwhile your competitor just shipped a new feature. <strong>Stop building from scratch. Start shipping what actually makes money.</strong> Every component here is already built, already responsive, already dark-mode ready. Drop it in. Swap the color. Close the laptop. Ship it.</p>
+          <div class="wi-label">What's Inside</div>
+          <ul class="wi-list">
+            <li>50+ components: buttons, forms, cards, modals, navbars</li>
+            <li>Pricing tables, alerts, badges, and more</li>
+            <li>Vanilla HTML/CSS — works in any stack</li>
+            <li>Dark mode variants for every component</li>
+            <li>Mobile responsive out of the box</li>
+          </ul>
+          <div class="price-row">
+            <div><div class="price-amt">$19.99</div><div class="price-note">One-time · Instant download</div></div>
+            <a href="https://onestopdesignshop.lemonsqueezy.com/checkout/buy/325cf1e8-b013-4981-9efb-68688bcbfd9b" class="btn-buy">Get Components →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── BUNDLE ── -->
+<section class="bundle-section" id="bundle">
+  <div class="bundle-inner">
+    <div class="reveal">
+      <span class="bundle-tag">✦ Complete Collection</span>
+      <h2 class="bundle-title">The Full <span class="gk gk-gold" data-glitter="gold">Arsenal.<canvas class="kc"></canvas></span><br>One Decision.</h2>
+      <p class="bundle-desc">You're not just buying design files. You're buying back the hours you would have wasted. The sales you would have lost. The credibility you would have had to beg a $3,000 designer for. Your competitors are spending thousands to look half as polished as you're about to look. Every pack. Every format. Every file. The complete design system for founders who are done letting bad visuals be the reason good products fail.</p>
+      <div class="bundle-list">
+        <div class="bundle-item">Cosmos Icon Set (84 SVG icons)</div>
+        <div class="bundle-item">All Figma source files</div>
+        <div class="bundle-item">Social Media Kit (24 templates)</div>
+        <div class="bundle-item">CSS, SCSS &amp; JS formats</div>
+        <div class="bundle-item">Pro Color Palettes (8 systems)</div>
+        <div class="bundle-item">Commercial license included</div>
+        <div class="bundle-item">UI Component Snippets (50+)</div>
+        <div class="bundle-item">Instant download · All at once</div>
+      </div>
+    </div>
+    <div class="bundle-card reveal">
+      <p class="bc-was">Individually $78.97</p>
+      <div class="bc-now"><span class="gk gk-gold" data-glitter="gold">$69.99<canvas class="kc"></canvas></span></div>
+      <p class="bc-save">✦ You save $8.98 · Everything in one shot</p>
+      <a href="https://onestopdesignshop.lemonsqueezy.com/checkout/buy/59a59fec-94b2-44b9-abc6-787ae1112e1c" class="btn-bundle">Get the Full Arsenal — $69.99 →</a>
+      <p class="bc-note">⚡ Instant download · Commercial license · No subscription</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials" id="proof">
+  <div class="container">
+    <p class="section-eyebrow reveal"><span class="gk gk-silver" data-glitter="silver">Real Results<canvas class="kc"></canvas></span></p>
+    <h2 class="section-title reveal">Real founders. Real sales.<br>Real money left on the table — until now.</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I almost didn't buy it. Thought I could figure the design out myself. That was a mistake I almost made. Used the icon set and social kit on my Product Hunt launch — 3x more upvotes than my previous launch. Finished top 5. The visuals were the difference. I'm certain of it."</p>
+        <div class="testi-author"><div class="testi-av av-a">M</div><div><div class="testi-name">Marcus T.</div><div class="testi-role">SaaS Founder · Indie Hacker</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Two weeks of my developer and I going in circles on colors. Two weeks of 'what if we tried blue' and 'maybe something warmer'. The palette pack ended it overnight. We opened it, picked a system in 10 minutes, locked it in, shipped in three days. Paid for itself before I even finished my coffee on day one."</p>
+        <div class="testi-author"><div class="testi-av av-b">S</div><div><div class="testi-name">Shreya P.</div><div class="testi-role">Solo Founder · EdTech</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"A designer quoted me $800 to fix my landing page. I almost paid it. Instead I bought the UI component pack, rebuilt it myself in one evening — and my conversion rate went up 18%. I made back the cost of the entire bundle in the first week. Genuinely the best $19.99 I have ever spent on anything for my business."</p>
+        <div class="testi-author"><div class="testi-av av-c">J</div><div><div class="testi-name">James R.</div><div class="testi-role">Developer · Bootstrapped</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process" id="process">
+  <div class="container">
+    <p class="section-eyebrow reveal">How Fast This Works</p>
+    <h2 class="section-title reveal">From checkout to live on your site<br>in under <span class="gk gk-gold" data-glitter="gold">10 minutes.<canvas class="kc"></canvas></span></h2>
+    <div class="process-grid">
+      <div class="process-step reveal"><div class="ps-num">01</div><div class="ps-title">Pick Your Weapon</div><p class="ps-desc">Look at your product right now. Your social. Your landing page. Something doesn't look right and you know it. That's the gap. Pick the pack that closes it — or grab the bundle and fix everything at once.</p></div>
+      <div class="process-step reveal"><div class="ps-num">02</div><div class="ps-title">Instant Access</div><p class="ps-desc">The moment you pay, it's yours. No onboarding email sequence. No "your account is being set up." No waiting until tomorrow. Files. In your hands. In seconds.</p></div>
+      <div class="process-step reveal"><div class="ps-num">03</div><div class="ps-title">Open &amp; Deploy</div><p class="ps-desc">Everything is named. Everything is organized. Open the folder and it makes sense immediately. This is what it feels like when someone who's been there builds the thing for someone who doesn't have time to figure it out.</p></div>
+      <div class="process-step reveal"><div class="ps-num">04</div><div class="ps-title">Watch Hesitation Turn to Sales</div><p class="ps-desc">This is the moment everything changes. That visitor who would have left in 3 seconds stays. Reads. Clicks buy. Your design stopped them. Your copy closed them. You did that — and you didn't need a $3,000 designer to get there.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── URGENCY STRIP ── -->
+<div style="background:#080816;border-top:1px solid rgba(192,132,252,.2);border-bottom:1px solid rgba(192,132,252,.2);padding:40px 24px;text-align:center;">
+  <div style="max-width:800px;margin:0 auto;">
+    <p style="font-family:'Cinzel',serif;font-size:clamp(14px,2vw,20px);font-weight:600;color:var(--t1);line-height:1.7;margin-bottom:16px;">
+      Right now your site is live. Right now visitors are landing on it.<br>
+      <span style="background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Every single one is forming an opinion in under 3 seconds.</span>
+    </p>
+    <p style="font-size:15px;font-weight:300;color:var(--t2);margin-bottom:28px;">How many walked away today because something didn't look right? You'll never know. But you can stop it from happening tomorrow.</p>
+    <a href="#bundle" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#fff;background:var(--btn);border-radius:10px;padding:16px 36px;box-shadow:0 0 40px rgba(124,58,237,.4);transition:opacity .2s;">Fix It Now — Full Bundle $69.99 →</a>
+  </div>
+</div>
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta">
+  <div class="fc-inner">
+    <p class="fc-label reveal">Your Next Move</p>
+    <h2 class="fc-title reveal">
+      Every hour you wait is another visitor<br>
+      who almost bought — and didn't. <span class="fc-grad">That ends today.</span>
+    </h2>
+    <p class="fc-sub reveal">Right now, while you're reading this, someone is landing on your product. They're looking at your icons, your colors, your layout. And something — something they can't name — doesn't feel right. So they leave. And you never know why. You can fix that today. In under 10 minutes. For less than the cost of one coffee meeting with a freelancer who'll quote you $3,000 to start.</p>
+    <div class="hero-cta-row reveal">
+      <a href="#products" class="btn-primary">Fix Your Design Today <span class="arrow">→</span></a>
+      <a href="#bundle" class="btn-ghost">Get Everything for $69.99 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span class="footer-brand">One Stop Design Shop</span>
+  <ul class="footer-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#bundle">Bundle</a></li>
+    <li><a href="https://onestopdesignshop.lemonsqueezy.com">Shop</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 One Stop Design Shop · All rights reserved</p>
+</footer>
+
+
+<!-- ── LOGO GALAXY PAINTER ── -->
+<script>
+(function(){
+  function paintLogoGalaxy(canvas, isCircle) {
+    if (!canvas) return;
+    const size = isCircle ? canvas.offsetWidth : canvas.offsetWidth;
+    canvas.width  = size;
+    canvas.height = isCircle ? size : canvas.offsetHeight || size;
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2, cy = h/2;
+
+    if (isCircle) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(cx, cy, Math.min(cx,cy), 0, Math.PI*2);
+      ctx.clip();
+    }
+
+    // dark base
+    ctx.fillStyle = '#06060f';
+    ctx.fillRect(0, 0, w, h);
+
+    // nebula layers
+    [{x:cx*.6,y:cy*.7,r:w*.5,c:'rgba(124,58,237,0.22)'},{x:cx*1.4,y:cy*1.3,r:w*.45,c:'rgba(219,39,119,0.16)'},{x:cx,y:cy,r:w*.3,c:'rgba(56,189,248,0.1)'}].forEach(n=>{
+      const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r);
+      g.addColorStop(0,n.c);g.addColorStop(1,'rgba(0,0,0,0)');
+      ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    });
+
+    // stars
+    const rng=(s=>{let x=s;return()=>{x=Math.sin(x)*10000;return x-Math.floor(x)}})(42);
+    const count = isCircle ? Math.floor(w*1.2) : Math.floor(w*0.6);
+    for(let i=0;i<count;i++){
+      const sx=rng()*w,sy=rng()*h,sr=rng()*1.3+0.2,b=rng();
+      ctx.beginPath();ctx.arc(sx,sy,sr,0,Math.PI*2);
+      ctx.fillStyle=b>.92?`rgba(251,191,36,${.5+rng()*.5})`:b>.82?`rgba(196,181,253,${.4+rng()*.5})`:b>.72?`rgba(147,197,253,${.3+rng()*.4})`:`rgba(255,255,255,${.12+rng()*.4})`;
+      ctx.fill();
+    }
+
+    if (isCircle) ctx.restore();
+  }
+
+  // Paint all logo canvases once fonts are ready
+  document.fonts.ready.then(() => {
+    paintLogoGalaxy(document.getElementById('navLogoCanvas'), true);
+    paintLogoGalaxy(document.getElementById('heroLogoCanvas'), true);
+  });
+
+  // Repaint on resize
+  window.addEventListener('resize', () => {
+    paintLogoGalaxy(document.getElementById('navLogoCanvas'), true);
+    paintLogoGalaxy(document.getElementById('heroLogoCanvas'), true);
+  });
+
+  // Subtle slow spin on hero logo
+  const heroLogoWrap = document.getElementById('heroLogoWrap');
+  if (heroLogoWrap) {
+    let angle = 0;
+    function rotateLogo() {
+      angle += 0.1;
+      heroLogoWrap.style.transform = `rotate(${angle}deg)`;
+      requestAnimationFrame(rotateLogo);
+    }
+    rotateLogo();
+  }
+})();
+</script>
+
+<!-- ── GALAXY CANVAS ── -->
+<script>
+(function(){
+  const c=document.getElementById('heroCanvas');
+  if(!c)return;
+  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;paint()}
+  function paint(){
+    const ctx=c.getContext('2d'),w=c.width,h=c.height,cx=w/2,cy=h/2;
+    ctx.clearRect(0,0,w,h);
+    [{x:cx*.4,y:cy*.5,r:w*.55,col:'rgba(124,58,237,0.1)'},{x:cx*1.7,y:cy*1.5,r:w*.5,col:'rgba(219,39,119,0.07)'},{x:cx*1.1,y:cy*.25,r:w*.35,col:'rgba(56,189,248,0.05)'},{x:cx*.6,y:cy*1.7,r:w*.4,col:'rgba(251,191,36,0.04)'}].forEach(n=>{
+      const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r);
+      g.addColorStop(0,n.col);g.addColorStop(1,'rgba(0,0,0,0)');
+      ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    });
+    const rng=(s=>{let x=s;return()=>{x=Math.sin(x)*10000;return x-Math.floor(x)}})(137);
+    for(let i=0;i<700;i++){
+      const sx=rng()*w,sy=rng()*h,sr=rng()*1.4+0.15,b=rng();
+      ctx.beginPath();ctx.arc(sx,sy,sr,0,Math.PI*2);
+      ctx.fillStyle=b>.94?`rgba(251,191,36,${.5+rng()*.5})`:b>.85?`rgba(196,181,253,${.4+rng()*.5})`:b>.75?`rgba(147,197,253,${.3+rng()*.4})`:`rgba(255,255,255,${.07+rng()*.3})`;
+      ctx.fill();
+    }
+    [[w*.08,h*.15],[w*.92,h*.12],[w*.88,h*.8],[w*.05,h*.85],[w*.5,h*.04],[w*.75,h*.5]].forEach(([sx,sy])=>{
+      ctx.beginPath();ctx.arc(sx,sy,2,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,0.95)';ctx.fill();
+      ctx.strokeStyle='rgba(255,255,255,0.15)';ctx.lineWidth=0.5;
+      ctx.beginPath();ctx.moveTo(sx-16,sy);ctx.lineTo(sx+16,sy);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(sx,sy-16);ctx.lineTo(sx,sy+16);ctx.stroke();
+    });
+  }
+  window.addEventListener('resize',resize);resize();
+})();
+</script>
+
+<!-- ── HERO GLITTER ── -->
+<script>
+(function(){
+  const canvas=document.getElementById('glitterCanvas');
+  const h1=document.getElementById('heroHeadline');
+  if(!canvas||!h1)return;
+  const ctx=canvas.getContext('2d');
+  const OX=80,OY=50;
+  const GOLD=['#FFD700','#FFC200','#FFEC80','#E8B800','#FFF0A0','#D4AF37'];
+  const SILVER=['#ffffff','#ffffff','#C0C0C0','#E8E8E8','#F0F0F0','#ffffff'];
+  const COLORS=[...GOLD,...SILVER,...SILVER];
+  let particles=[],W=0,H=0;
+  function resize(){const r=h1.getBoundingClientRect();W=r.width+OX*2;H=r.height+OY*2;canvas.width=W;canvas.height=H}
+  function spawn(){
+    const col=COLORS[Math.floor(Math.random()*COLORS.length)];
+    const edge=Math.random()<0.65;let x,y;
+    if(edge){const e=Math.floor(Math.random()*4);
+      if(e===0){x=Math.random()*W;y=OY*(0.1+Math.random()*0.6)}
+      else if(e===1){x=Math.random()*W;y=H-OY*(0.1+Math.random()*0.6)}
+      else if(e===2){x=OX*(0.1+Math.random()*0.7);y=Math.random()*H}
+      else{x=W-OX*(0.1+Math.random()*0.7);y=Math.random()*H}
+    }else{x=OX*.5+Math.random()*(W-OX);y=OY*.5+Math.random()*(H-OY)}
+    const sz=0.8+Math.random()*3;
+    return{x,y,vx:(Math.random()-.5)*.55,vy:-.25-Math.random()*.65,size:sz,color:col,life:0,maxLife:55+Math.floor(Math.random()*95),rot:Math.random()*Math.PI*2,rotS:(Math.random()-.5)*.08,twk:Math.random()*Math.PI*2,twkS:.05+Math.random()*.09,shape:['star','star','star','diamond','dot'][Math.floor(Math.random()*5)],shimmer:Math.random()<.35}
+  }
+  function star4(x,y,r,col,a,rot){ctx.save();ctx.globalAlpha=a;ctx.translate(x,y);ctx.rotate(rot);ctx.beginPath();for(let i=0;i<8;i++){const ang=(i*Math.PI)/4,d=i%2===0?r:r*.32;i===0?ctx.moveTo(Math.cos(ang)*d,Math.sin(ang)*d):ctx.lineTo(Math.cos(ang)*d,Math.sin(ang)*d)}ctx.closePath();ctx.fillStyle=col;ctx.fill();const g=ctx.createRadialGradient(0,0,0,0,0,r*2);g.addColorStop(0,'rgba(255,255,255,0.6)');g.addColorStop(1,'rgba(255,255,255,0)');ctx.beginPath();ctx.arc(0,0,r*2,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.restore()}
+  function dmnd(x,y,r,col,a,rot){ctx.save();ctx.globalAlpha=a;ctx.translate(x,y);ctx.rotate(rot);ctx.beginPath();ctx.moveTo(0,-r);ctx.lineTo(r*.5,0);ctx.lineTo(0,r);ctx.lineTo(-r*.5,0);ctx.closePath();ctx.fillStyle=col;ctx.fill();ctx.restore()}
+  function dot(x,y,r,col,a){ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=col;ctx.fill();const g=ctx.createRadialGradient(x,y,0,x,y,r*2.5);g.addColorStop(0,'rgba(255,255,255,0.5)');g.addColorStop(1,'rgba(255,255,255,0)');ctx.beginPath();ctx.arc(x,y,r*2.5,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.restore()}
+  function tick(){
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<(Math.random()<.6?4:3);i++)if(particles.length<200)particles.push(spawn());
+    particles=particles.filter(p=>p.life<p.maxLife);
+    for(const p of particles){
+      p.life++;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rotS;p.twk+=p.twkS;
+      const prog=p.life/p.maxLife;
+      let a=prog<.15?prog/.15:prog<.72?1:(1-prog)/.28;
+      a*=.72+.28*Math.sin(p.twk);if(p.shimmer)a=Math.min(1,a*1.4);
+      const sz=p.size*(.87+.13*Math.sin(p.twk*.8));
+      if(p.shape==='star')star4(p.x,p.y,sz,p.color,a,p.rot);
+      else if(p.shape==='diamond')dmnd(p.x,p.y,sz*.8,p.color,a,p.rot);
+      else dot(p.x,p.y,sz*.55,p.color,a);
+      if(p.shimmer&&Math.sin(p.twk)>.82){ctx.save();ctx.globalAlpha=a*.7;ctx.beginPath();ctx.arc(p.x,p.y,sz*.28,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();ctx.restore()}
+    }
+    requestAnimationFrame(tick);
+  }
+  document.fonts.ready.then(()=>setTimeout(()=>{resize();window.addEventListener('resize',()=>{resize();particles=[]});tick()},250));
+})();
+</script>
+
+<!-- ── KEYWORD GLITTER ENGINE ── -->
+<script>
+(function(){
+  const GOLD=['#FFD700','#FFC200','#FFEC80','#E8B800','#FFF0A0','#D4AF37','#F5C518'];
+  const SILVER=['#C0C0C0','#E8E8E8','#A8A8A8','#D4D4D4','#F0F0F0','#B8B8B8','#FFFFFF'];
+  function createGlitter(wrapper,type){
+    const canvas=wrapper.querySelector('canvas.kc');if(!canvas)return;
+    const ctx=canvas.getContext('2d');
+    const COLORS=type==='gold'?[...GOLD,...GOLD,...SILVER]:type==='silver'?[...SILVER,...SILVER,...GOLD]:[...GOLD,...SILVER];
+    let particles=[],W=0,H=0,running=true;
+    function resize(){W=canvas.offsetWidth;H=canvas.offsetHeight;canvas.width=W;canvas.height=H}
+    function spawn(){
+      const col=COLORS[Math.floor(Math.random()*COLORS.length)];
+      const onEdge=Math.random()<.72;let x,y;const px=24,py=32;
+      if(onEdge){const e=Math.floor(Math.random()*4);
+        if(e===0){x=Math.random()*W;y=py*(.1+Math.random()*.6)}
+        else if(e===1){x=Math.random()*W;y=H-py*(.1+Math.random()*.6)}
+        else if(e===2){x=px*(.1+Math.random()*.7);y=Math.random()*H}
+        else{x=W-px*(.1+Math.random()*.7);y=Math.random()*H}
+      }else{x=px*.5+Math.random()*(W-px);y=py*.5+Math.random()*(H-py)}
+      const sz=.6+Math.random()*2.4;
+      return{x,y,vx:(Math.random()-.5)*.45,vy:-.2-Math.random()*.55,size:sz,color:col,life:0,maxLife:50+Math.floor(Math.random()*80),rot:Math.random()*Math.PI*2,rotS:(Math.random()-.5)*.08,twk:Math.random()*Math.PI*2,twkS:.06+Math.random()*.1,shape:['star','star','star','diamond','dot'][Math.floor(Math.random()*5)],shimmer:Math.random()<.3}
+    }
+    function star4(x,y,r,col,a,rot){ctx.save();ctx.globalAlpha=a;ctx.translate(x,y);ctx.rotate(rot);ctx.beginPath();for(let i=0;i<8;i++){const ang=(i*Math.PI)/4,d=i%2===0?r:r*.32;i===0?ctx.moveTo(Math.cos(ang)*d,Math.sin(ang)*d):ctx.lineTo(Math.cos(ang)*d,Math.sin(ang)*d)}ctx.closePath();ctx.fillStyle=col;ctx.fill();const g=ctx.createRadialGradient(0,0,0,0,0,r*1.8);g.addColorStop(0,'rgba(255,255,255,0.6)');g.addColorStop(1,'rgba(255,255,255,0)');ctx.beginPath();ctx.arc(0,0,r*1.8,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.restore()}
+    function dmnd(x,y,r,col,a,rot){ctx.save();ctx.globalAlpha=a;ctx.translate(x,y);ctx.rotate(rot);ctx.beginPath();ctx.moveTo(0,-r);ctx.lineTo(r*.5,0);ctx.lineTo(0,r);ctx.lineTo(-r*.5,0);ctx.closePath();ctx.fillStyle=col;ctx.fill();ctx.restore()}
+    function dot(x,y,r,col,a){ctx.save();ctx.globalAlpha=a;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=col;ctx.fill();const g=ctx.createRadialGradient(x,y,0,x,y,r*2.2);g.addColorStop(0,'rgba(255,255,255,0.5)');g.addColorStop(1,'rgba(255,255,255,0)');ctx.beginPath();ctx.arc(x,y,r*2.2,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.restore()}
+    function tick(){
+      if(!running)return;ctx.clearRect(0,0,W,H);
+      if(particles.length<50)particles.push(spawn());
+      if(Math.random()<.45&&particles.length<50)particles.push(spawn());
+      particles=particles.filter(p=>p.life<p.maxLife);
+      for(const p of particles){
+        p.life++;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rotS;p.twk+=p.twkS;
+        const prog=p.life/p.maxLife;
+        let a=prog<.15?prog/.15:prog<.72?1:(1-prog)/.28;
+        a*=.72+.28*Math.sin(p.twk);if(p.shimmer)a=Math.min(1,a*1.4);
+        const sz=p.size*(.88+.12*Math.sin(p.twk*.8));
+        if(p.shape==='star')star4(p.x,p.y,sz,p.color,a,p.rot);
+        else if(p.shape==='diamond')dmnd(p.x,p.y,sz*.75,p.color,a,p.rot);
+        else dot(p.x,p.y,sz*.5,p.color,a);
+        if(p.shimmer&&Math.sin(p.twk)>.85){ctx.save();ctx.globalAlpha=a*.7;ctx.beginPath();ctx.arc(p.x,p.y,sz*.25,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();ctx.restore()}
+      }
+      requestAnimationFrame(tick);
+    }
+    const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{running=e.isIntersecting;if(running){resize();tick()}})},{threshold:.1});
+    obs.observe(wrapper);resize();tick();
+  }
+  document.fonts.ready.then(()=>setTimeout(()=>{
+    document.querySelectorAll('.gk[data-glitter]').forEach(el=>createGlitter(el,el.dataset.glitter));
+    window.addEventListener('resize',()=>document.querySelectorAll('.gk[data-glitter]').forEach(el=>{const c=el.querySelector('canvas.kc');if(c){c.width=el.offsetWidth+48;c.height=el.offsetHeight+64}}));
+  },300));
+})();
+</script>
+
+<!-- ── SCROLL REVEAL ── -->
+<script>
+(function(){
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+})();
+</script>
+
+</body>
+</html>
